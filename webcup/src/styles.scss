@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Roboto";
+    src: url('assets/fonts/Roboto-Medium.ttf');
+}
+
+*, *::before, *::after {
+    margin: 0%;
+    padding: 0%;
+    font-size: .9rem;
+    color: #020018;
+    letter-spacing: .7px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Roboto";
+    height: 100vh;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
