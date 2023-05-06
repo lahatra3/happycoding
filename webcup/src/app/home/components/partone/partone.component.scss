@@ -1,4 +1,92 @@
 #partone {
-    height: 100vh;
+    height: calc(100vh + 67px);
     position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #e0dffa31;
+        z-index: 1;
+    }
+    
+    .container {
+        height: 100%;
+        width: 100%;
+
+        .row {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+
+            .text1 {
+                span {
+                    letter-spacing: 1px;
+                    font-size: 3.7rem;
+                    filter: drop-shadow(-1px 3px 2px #0e0b3327);
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+
+            .text2 {
+                span {
+                    font-size: 1rem;
+                    opacity: .7;
+                }
+            }
+
+            .container_image {
+                img {
+                    background-color: #02001865;
+                    animation: fancy_animation 7s infinite ease-in-out;
+                    position: relative;
+                    box-shadow: 2px 1px 13px 7px #02001828;
+
+                    @media screen and (max-width: 767px) {
+                        width:  319px;
+                    }
+                }
+            }
+
+            .container_button {
+                button {
+                    color: #fff;
+                    border: none;
+                    border-radius: 9px;
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                    background-image: linear-gradient(to right top, #19107f, #1f289d, 
+                        #223fbc, #1e56dc, #0d6efd);
+                    transform: scale(1);
+                    transition: all .5s ease-in-out;
+                    
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: 2px 1px 13px 7px #3352dda6;
+                    }
+                }
+            }
+        }
+    }
+
+    @keyframes fancy_animation {
+        0% {
+            border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        
+        50% {
+            border-radius:  30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+    
+        100% {
+            border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
 }
