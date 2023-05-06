@@ -32,6 +32,13 @@
                     @media screen and (max-width: 767px) {
                         font-size: 2.5rem;
                     }
+
+                    .inter_texte {
+                        background: -webkit-linear-gradient(#19107f, #0d6efd);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
             }
 
