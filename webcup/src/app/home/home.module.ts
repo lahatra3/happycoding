@@ -5,13 +5,15 @@ import { HomeComponent } from './components/home/home.component';
 import { PartoneComponent } from './components/partone/partone.component';
 import { ParttwoComponent } from './components/parttwo/parttwo.component';
 import { PartthreeComponent } from './components/partthree/partthree.component';
+import { OnirixComponent } from './components/onirix/onirix.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     PartoneComponent,
     ParttwoComponent,
-    PartthreeComponent
+    PartthreeComponent,
+    OnirixComponent
   ],
   imports: [
     CommonModule,
