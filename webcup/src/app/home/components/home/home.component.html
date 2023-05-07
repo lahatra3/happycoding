@@ -1,4 +1,15 @@
 <div class="home_container">
     <app-partone></app-partone>
-    <app-parttwo></app-parttwo>
+    <app-onirix></app-onirix>
 </div>
+<div class="social_networks">
+    <div class="d-flex flex-column align-items-center rounded-pill container_icones p-1">
+        <span class="trait mx-1 mb-1 mt-2"></span>
+        <span *ngFor="let data of listeicones" class="mx-1 my-2 icones">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" [attr.fill]="data.color" 
+                viewBox="0 0 16 16">
+                <path [attr.d]="data.path"/>
+            </svg>
+        </span>
+        <span class="trait mx-1 mt-1 mb-2"></span>
+    </div>

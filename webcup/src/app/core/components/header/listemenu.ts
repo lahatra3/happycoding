@@ -13,6 +13,6 @@ export const listemenu: {label: string; route: string}[] = [
     },
     {
         label: "Help & support",
-        route: "/support"
+        route: "/help"
     }
 ];

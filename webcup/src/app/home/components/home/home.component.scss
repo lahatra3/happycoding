@@ -1,0 +1,29 @@
+.social_networks {
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    .container_icones {
+        background-color: #ffffff63;
+        box-shadow: 2px 1px 13px 7px #02001815;
+        
+        span.icones {
+            cursor: pointer;
+            filter: drop-shadow(-1px 3px 2px #0c093027);
+            transform: scale(1);
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.09);
+            }
+        }
+
+        span.trait {
+            height: 31px;
+            width: 2px;
+            background-color: #020018;
+        }
+    }
+}
