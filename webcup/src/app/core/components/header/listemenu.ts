@@ -12,7 +12,7 @@ export const listemenu: {label: string; route: string}[] = [
         route: "/faq"
     },
     {
-        label: "Hepl & support",
-        route: "/help"
+        label: "Help & support",
+        route: "/support"
     }
 ];

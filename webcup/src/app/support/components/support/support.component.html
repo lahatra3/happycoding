@@ -1,1 +1,107 @@
-<p>support works!</p>
+<div class="d-flex justify-content-center">
+	<div class="pyramid-loader">
+	  <div class="wrapper">
+		<span class="side side1"></span>
+		<span class="side side2"></span>
+		<span class="side side3"></span>
+		<span class="side side4"></span>
+		<span class="shadow"></span>
+	  </div>  
+	</div>
+  </div>
+  
+<!-- Container -->
+<section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1 style="color: magenta;">ONIRIX SUPPORT<span>.</span></h1>
+		  <div class="scene">
+			<div class="cube">
+			  <span class="side top">Cauchemar</span>
+			  <span class="side front">Sommeil</span>
+			</div>
+		  </div>
+          <div class="animation"><h2 style="margin: auto; color: rgb(54, 144, 228); padding: 25px;">Comment faire face au cauchemar ?</h2></div>
+		  <h5 style="color: rgb(168, 164, 164);">Si vous avez fait des rêves ou des cauchemars qui ont affecté votre journée ou votre vie professionnelle, voici quelques conseils pour vous aider</h5>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            
+            <h3><button class="btn-primary" (click)="toggleOne()">Prenez du temps pour vous</button></h3>
+			<div *ngIf="showTextOne">
+				<p class="text-white">Prenez quelques minutes pour vous détendre et réfléchir sur ce qui s'est passé pendant votre rêve ou cauchemar.</p>
+			</div>
+			</div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            
+            <h3><button class="btn-primary" (click)="toggleTwo()">Parlez-en à quelqu'un</button></h3>
+			<div *ngIf="showTextTwo">
+				<p class="text-white">Si vous avez besoin de parler à quelqu'un de vos rêves ou cauchemars, trouvez un ami de confiance ou un professionnel de la santé mentale pour en discuter.</p>
+			</div>
+			</div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            
+            <h3><button  (click)="toggleThree()">Évitez les stimulants</button></h3>
+			<div *ngIf="showTextThree">
+				<p class="text-white">Evitez de consommer des stimulants avant de dormir, tels que la caféine, l'alcool et les drogues, car cela peut affecter votre sommeil et vos rêves.</p>
+			</div>
+			</div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            
+            <h3><button (click)="toggleFour()">Utilisez des techniques de relaxation</button></h3>
+			<div *ngIf="showTextFour">
+				<p class="text-white">Des techniques de relaxation telles que la méditation, la respiration profonde ou la visualisation peuvent aider à réduire le stress et l'anxiété qui peuvent être liés à des rêves ou des cauchemars.</p>
+			</div>
+			</div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            
+            <h3><button  (click)="toggleFive()">Consultez un professionnel de la santé mentale </button></h3>
+			<div *ngIf="showTextFive">
+				<p class="text-white">Si vous avez des cauchemars récurrents ou si vous vous sentez anxieux ou déprimé à cause de vos rêves, consultez un professionnel de la santé mentale pour obtenir de l'aide.</p>
+			</div>
+			</div>
+        </div>
+        
+      </div>
+	  
+
+    </div>
+	
+  </section>
+  <section id="about" class="about">
+	<div class="container" data-aos="fade-up">
+
+	  <div class="row">
+		<div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+		  <img src="../../../../assets/images/logo.gif" style="border-radius: 10px;" class="img-fluid" alt="">
+		</div>
+		<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+		  <h3>A PROPOS DU PROJET ONIRIX</h3>
+		  <p class="fst-italic">
+			Nombreux avantages sont présentés par ce projet:
+		  </p>
+		  <ul>
+			<li><i class="ri-check-double-line"></i> Le projet Onirix vise à développer une intelligence artificielle avancée qui est capable d'analyser et de décoder les rêves des utilisateurs afin de prédire leur avenir. Cette technologie a été développée par l'Institut International des Rêves, une organisation de renom spécialisée dans l'étude des rêves.</li>
+			<li><i class="ri-check-double-line"></i>Onirix est une une plateforme web innovante qui permet aux utilisateurs de soumettre facilement la description de leurs rêves pour obtenir des prédictions prémonitoires personnalisées et des informations utiles sur les événements à venir. Les résultats de l'analyse sont présentés de manière claire et précise sur la plateforme.</li>
+			<li><i class="ri-check-double-line"></i> Le site web présente l'IA Onirix et l'Institut International des Rêves pour permettre aux utilisateurs de comprendre les technologies utilisées et l'expertise de l'organisation.</li>
+		  </ul>
+		  <p>
+			L'objectif ultime de ce projet est d'offrir une vision unique de l'avenir aux utilisateurs grâce à l'IA Onirix et de permettre aux rêves de devenir la clé de leur destinée.
+		  </p>
+		</div>
+	  </div>
+	</div>
+  </section>

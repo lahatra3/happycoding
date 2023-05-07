@@ -1,1 +1,39 @@
-<p>parttwo works!</p>
+<section class="main-banner" id="home">
+	
+	<div class="sec-wp">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="banner-text text-container"  [ngClass]="{ 'visible': isVisible }" [@fadeInRight]>
+						<!-- (mouseover)="startAnimation()" (mouseout)="stopAnimation()" -->
+						<h3 class="h1-title ">
+							Institut
+							International
+							des Rêves.
+						</h3>
+						<p> Nous sommes une organisation de renom spécialisée dans l'étude des rêves.
+							Grâce à des années de recherche et de développement, nos scientifiques ont 
+							développé Onirix, une intelligence artificielle avancée capable d'analyser 
+							et de décoder les rêves des utilisateurs.
+						</p>
+						<div class="banner-btn mt-4">
+							<b><a  class="sec-btn" routerLink="/decoder">Essayer Onirix</a></b>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="banner-img-wp">
+						<div class="banner-img" style="background-image: url(../../../../assets/images/iir.jpg); opacity: 0.8;">
+						</div>
+					</div>
+					<div class="banner-img-text mt-4 m-auto text-container-left"  [ngClass]="{ 'animate': isAnimate }" [@fadeInLeft]>
+						<h3 class="h5-title">Institut International des Rêves</h3>
+						<p>Grâce à l'intelligence artificielle révolutionnaire de l'Institut
+
+							International des Rêves, les rêves deviendront la clé de notre destinée.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

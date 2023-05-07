@@ -1,1 +1,36 @@
-<p>footer works!</p>
+<section class="brands-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="brand-title mb-5 text-center">
+					<h5 class="h5-title">Notre Team</h5>
+					<img src="../../../../assets/images/happycoding.gif" alt="" class="mx-auto" width="150px">
+					<h5 class="h5-title" >Nos partenaires</h5>
+				</div>
+				<div class="container">
+					<div class="brands-row row">
+					  <div class="brands-box col-12 col-md-6 col-lg-2 mb-3" *ngFor="let partner of partners" [@fadeInUp]>
+						<a href="{{partner.link}}">
+						  <img src="{{partner.image}}" style="border-radius: 5px;" alt="{{partner.alt}}" class="img-fluid" width="100px" height="100px">
+						</a>
+					  </div>
+					</div>
+				  </div>
+				  
+			</div>
+			
+			<div class="loadingspinner">
+				<div id="square1"></div>
+				<div id="square2"></div>
+				<div id="square3"></div>
+				<div id="square4"></div>
+				<div id="square5"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="bg-dark py-5">
+	<h5 class="text-center text-white">© happyCoding | <a href="https://webcup.fr" target="_blank" style="color: #cf2e2e; font-size: 20px; text-decoration: none;">24 by WebCup</a> 2023</h5>
+</footer>
+
+  
