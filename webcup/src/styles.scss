@@ -21,3 +21,8 @@ body {
         display: none;
     }
 }
+@media screen and (max-width: 991px) {
+	.brands-box {
+		width: 110px;
+	}
+  }

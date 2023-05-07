@@ -4,6 +4,7 @@
     margin: 0 -15px;
 }
 
+
 .brands-box {
     padding: 0 15px;
 	margin-right: 10px;
@@ -280,5 +281,13 @@ section {
 	100% {
 	  transform: scale(1.0);
 	  opacity: 1.0;
+	}
+  }
+  @media screen and (max-width: 991px) {
+	.brands-box {
+		width: 110px;
+	}
+	.rounded-pill  {
+		display: none;
 	}
   }
