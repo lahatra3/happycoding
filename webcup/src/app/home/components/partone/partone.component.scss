@@ -32,6 +32,10 @@
                     @media screen and (max-width: 767px) {
                         font-size: 2.5rem;
                     }
+
+                    .inter_texte {
+                        animation: texte_animation 7s alternate-reverse infinite ease-in-out;
+                    }
                 }
             }
 
@@ -87,6 +91,39 @@
     
         100% {
             border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
+
+    @keyframes texte_animation {
+        0% {
+            background: -webkit-linear-gradient(#19107f, #1f289d);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        25% {
+            background: -webkit-linear-gradient(#1f289d, #223fbc);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        50% {
+            background: -webkit-linear-gradient(#223fbc, #1e56dc);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        75% {
+            background: -webkit-linear-gradient(#1e56dc, #0d6efd);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        100% {
+            background: -webkit-linear-gradient(#0d6efd, #19107f);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }
